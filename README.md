@@ -4,7 +4,7 @@ Assumptions:
 
 - tried to use a cost-effective solution for the problem at hand;
 
-- research as also time-boxed appropriately;
+- research was also appropriately time-boxed;
 
 - would have used a time series library like Pandas if performance was
   not a issue and we needed to greatly expand on the features;

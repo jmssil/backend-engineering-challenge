@@ -24,7 +24,7 @@ def main():
     this data structure we can simply compute the accumulated average
     for all the time interval. Any original event will thus be
     subtracted from the accumulated average when it goes out the
-    window by accumulating its mirror (symmetric duration value).
+    window by assimilating its mirror (symmetric duration value).
 
     """
 
@@ -58,7 +58,6 @@ def main():
     # sort list of original and mirror events, so that we can iterate
     # them in chronological order
     events_mirrored_sorted = sorted(events_mirrored, key=lambda event: event['timestamp'])
-    print events_mirrored_sorted
 
     # iterate the list of events chronologically
     time = start_time
@@ -103,7 +102,6 @@ if __name__ == '__main__':
 
     # parse input arguments
     ARGS = PARSER.parse_args()
-
     if ARGS.window_size < 1:
         print >> sys.stderr, "Window size must be a positive integer (minutes)."
         sys.exit(-1)
